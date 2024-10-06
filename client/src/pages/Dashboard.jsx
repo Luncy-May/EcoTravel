@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { ProgressPie, Histogram, ShortCut } from '../components'
-import LineGraph from '../components/LineGraph'
 import NotAuthorizedPage from './NotAuthorizedPage';
 
 const Dashboard = ({ Darkmode }) => {
@@ -49,21 +47,21 @@ const Dashboard = ({ Darkmode }) => {
 
                     <div className='flex justify-between items-center max-w-[1400px]'>
                         <div className='flex-shrink-0'>
-                            <ProgressPie />
+                            
                         </div>
 
                         <div className='flex-shrink-0'>
-                            <LineGraph />
+                            
                         </div>
 
                         <div className='flex-shrink-0'>
-                            <ShortCut />
+                            
                         </div>
                     </div>
 
                     {/* Histogram section */}
                     <div>
-                        <Histogram />
+                        
                     </div>
                 </div>
             ) : (<div>

@@ -7,9 +7,9 @@ import Dashboard from "./Dashboard";
 import Home from "./Home";
 import MyPlans from "./MyPlans";
 import Profile from "./Profile";
-import Report from "./Report";
 import Setting from "./Setting";
 import Team from "./Team";
+import Support from "./Support";
 export {
     NotAuthorizedPage,
     Report,
@@ -21,5 +21,6 @@ export {
     MyPlans,
     Profile,
     Setting,
-    Team
+    Team,
+    Support
 }

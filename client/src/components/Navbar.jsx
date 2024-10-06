@@ -21,9 +21,7 @@ function Navbar() {
                             <FaIcons.FaBars onClick={showSidebar} className="text-white cursor-pointer" />
                         </Link>
                     </div>
-                    <div className="flex-1 flex justify-center text-4xl font-bold font-serif text-white">
-                        <span className="text-gradient">Splasher</span>
-                    </div>
+            
                     <div className="flex-1 flex justify-end mr-8"></div>
                 </div>
 

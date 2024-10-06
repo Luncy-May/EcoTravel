@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Activities, Feed, FindClubs, FindFriends, Gallery } from './CommunityPages'
-import { CommunityNavbar } from '../components'
 import NotAuthorizedPage from './NotAuthorizedPage'
 const Community = ({ Darkmode }) => {
     const username = localStorage.getItem("username");
@@ -18,8 +17,7 @@ const Community = ({ Darkmode }) => {
         <div>
             <div className='space-y-10 p-3 overflow-hidden'>
                 <div className='flex flex-col items-center justify-center'>
-                    <div className='pt-5 space-y-5 text-4xl font-bold'>Welcome to the Splasher Community</div>
-                    <CommunityNavbar />
+                    <div className='pt-5 space-y-5 text-4xl font-bold'>Welcome to the EcoTravel Community</div>
                 </div>
                 {/* Sub-routes for Community */}
                 <Routes>
@@ -35,7 +33,7 @@ const Community = ({ Darkmode }) => {
         <div>
             <div className=' p-3 overflow-hidden'>
                 <div className='flex flex-col items-center justify-center'>
-                    <div className='pt-5 space-y-5 text-4xl font-bold'>Welcome to the Splasher Community</div>
+                    <div className='pt-5 space-y-5 text-4xl font-bold'>Welcome to the EcoTravel Community</div>
                     <CommunityNavbar />
                 </div>
                 {/* Sub-routes for Community */}
