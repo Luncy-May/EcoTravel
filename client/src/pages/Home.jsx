@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { BackgroundImage } from '../components';
+import { BackgroundImage, Navbar } from '../components';
 import gsap from 'gsap'; // <-- import GSAP
 import { useGSAP } from '@gsap/react'; // <-- import the hook from our React package
 import { Link } from 'react-router-dom'
@@ -17,14 +17,14 @@ const Home = () => {
     ); // <-- scope for selector text (optional)
 
     return (
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full h-screen overflow-hidden z-20">
             <div className='absolute w-full h-full'>
                 <BackgroundImage name="home" imagePath={"/sunnyLakeSky.jpg"} />
             </div>
             <div>
-                <div ref={container} className="relative w-full h-full flex flex-col items-center justify-center z-50 overflow-hidden">
+                <div ref={container} className="relative w-full h-full flex flex-col items-center justify-center overflow-hidden">
                     <div className="text-white text-[140px] font-inter pt-[5vh] overflow-hidden whitespace-nowrap">Welcome to EcoTravel</div>
-                    <div className='text-white overflow-hidden space-x-5 flex items-center justify-center z-50 font-inter '>
+                    <div className='text-white overflow-hidden space-x-5 flex items-center justify-center font-inter '>
                         <div>
                             <div className='flex-shrink-0'>
                                 <Link to="/login">

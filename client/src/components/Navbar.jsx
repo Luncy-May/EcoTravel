@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import { Link, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import NavbarContents from './NavbarContents';
 import { IconContext } from 'react-icons';
 
@@ -21,12 +21,10 @@ function Navbar() {
                             <FaIcons.FaBars onClick={showSidebar} className="text-white cursor-pointer" />
                         </Link>
                     </div>
-            
-                    <div className="flex-1 flex justify-end mr-8"></div>
                 </div>
 
                 {/* Sidebar */}
-                <nav className={`bg-gray-800 w-60 h-screen flex z-30 justify-center fixed top-0 transition-all duration-350 ${sidebar ? 'left-0' : '-left-full'}`}>
+                <nav className={`bg-gray-800 w-60 h-screen flex z-50 justify-center fixed top-0 transition-all duration-350 ${sidebar ? 'left-0' : '-left-full'}`}>
                     <ul className="w-full">
                         <li className="bg-gray-800 h-20 flex items-center justify-start">
                             <div className="ml-8 text-2xl cursor-pointer">

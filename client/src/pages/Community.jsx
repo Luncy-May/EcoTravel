@@ -34,7 +34,6 @@ const Community = ({ Darkmode }) => {
             <div className=' p-3 overflow-hidden'>
                 <div className='flex flex-col items-center justify-center'>
                     <div className='pt-5 space-y-5 text-4xl font-bold'>Welcome to the EcoTravel Community</div>
-                    <CommunityNavbar />
                 </div>
                 {/* Sub-routes for Community */}
                 <Routes>
