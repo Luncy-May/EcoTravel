@@ -12,7 +12,7 @@ function Navbar() {
 
     return (
 
-        <>
+        <div>
             <IconContext.Provider value={{ color: '#fff' }}>
                 {/* Navbar */}
                 <div className="bg-gray-800 h-20 flex items-center z-50 text-center text-white text-4xl justify-center">
@@ -26,7 +26,7 @@ function Navbar() {
                 </div>
 
                 {/* Sidebar */}
-                <nav className={`bg-gray-800 w-60 h-screen flex z-50 justify-center fixed top-0 transition-all duration-350 ${sidebar ? 'left-0' : '-left-full'}`}>
+                <nav className={`bg-gray-800 w-60 h-screen flex z-30 justify-center fixed top-0 transition-all duration-350 ${sidebar ? 'left-0' : '-left-full'}`}>
                     <ul className="w-full">
                         <li className="bg-gray-800 h-20 flex items-center justify-start">
                             <div className="ml-8 text-2xl cursor-pointer">
@@ -52,7 +52,7 @@ function Navbar() {
                 ))}
 
             </IconContext.Provider>
-        </>
+        </div>
     );
 }
 
